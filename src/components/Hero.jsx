@@ -28,7 +28,8 @@ export function Hero() {
         Virgin Islands Softball.
       </h1>
       <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
-        We are a non-profit organization with the vision of showcasing the amazing talents of Virgin Islands softball players to the world!
+        We are a non-profit organization with the vision of showcasing the amazing 
+        talents of Virgin Islands softball players to the world!
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
         {/* <Button href="/register">Get 6 months free</Button> */}
