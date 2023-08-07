@@ -6,39 +6,94 @@ const stats = [
   { label: "Scholarships raised", value: "$119 million" },
   { label: "New users annually", value: "46,000" },
 ];
+
+const MOCK_JPG =
+  "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80";
 const people = [
   {
     name: "Elroy Hill",
     role: "Vice President",
-    imageUrl:
-      "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    imageUrl: "/wanks.jpg",
     twitterUrl: "#",
     linkedinUrl: "#",
     bio: "Quia illum aut in beatae. Possimus dolores aliquid accusantium aut in ut non assumenda. Enim iusto molestias aut deleniti eos aliquid magnam molestiae. At et non possimus ab. Magni labore molestiae nulla qui.",
   },
   {
-    name: "Jose Nazario",
+    name: "Jose Rosario",
+    role: "Director",
+    imageUrl: MOCK_JPG,
+    twitterUrl: "#",
+    linkedinUrl: "#",
+    bio: "Quia illum aut in beatae. Possimus dolores aliquid accusantium aut in ut non assumenda. Enim iusto molestias aut deleniti eos aliquid magnam molestiae. At et non possimus ab. Magni labore molestiae nulla qui.",
+  },
+  {
+    name: "Athneil “Bobby” Thomas",
+    role: "Vice President (STJ/STT)",
+    imageUrl: "/bobby.jpg",
+    twitterUrl: "#",
+    linkedinUrl: "#",
+    bio: "Quia illum aut in beatae. Possimus dolores aliquid accusantium aut in ut non assumenda. Enim iusto molestias aut deleniti eos aliquid magnam molestiae. At et non possimus ab. Magni labore molestiae nulla qui.",
+  },
+  {
+    name: "Emerito Torres",
+    role: "Vice President (STX)",
+    imageUrl: "/emerito.jpg",
+    twitterUrl: "#",
+    linkedinUrl: "#",
+    bio: "Quia illum aut in beatae. Possimus dolores aliquid accusantium aut in ut non assumenda. Enim iusto molestias aut deleniti eos aliquid magnam molestiae. At et non possimus ab. Magni labore molestiae nulla qui.",
+  },
+  {
+    name: "Sherry-Ann Francis",
     role: "Treasurer",
-    imageUrl:
-      "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    imageUrl: "/sherry.jpg",
     twitterUrl: "#",
     linkedinUrl: "#",
     bio: "Quia illum aut in beatae. Possimus dolores aliquid accusantium aut in ut non assumenda. Enim iusto molestias aut deleniti eos aliquid magnam molestiae. At et non possimus ab. Magni labore molestiae nulla qui.",
   },
   {
-    name: "Bobby Thomas",
-    role: "Vice President",
-    imageUrl:
-      "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    name: "Erainee Acosta",
+    role: "Secretary",
+    imageUrl: "erainee.jpg",
     twitterUrl: "#",
     linkedinUrl: "#",
     bio: "Quia illum aut in beatae. Possimus dolores aliquid accusantium aut in ut non assumenda. Enim iusto molestias aut deleniti eos aliquid magnam molestiae. At et non possimus ab. Magni labore molestiae nulla qui.",
   },
   {
-    name: "Sherry Francis",
-    role: "Tresurer",
-    imageUrl:
-      "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    name: "Lloyd Jackson",
+    role: "Manager",
+    imageUrl: MOCK_JPG,
+    twitterUrl: "#",
+    linkedinUrl: "#",
+    bio: "Quia illum aut in beatae. Possimus dolores aliquid accusantium aut in ut non assumenda. Enim iusto molestias aut deleniti eos aliquid magnam molestiae. At et non possimus ab. Magni labore molestiae nulla qui.",
+  },
+  {
+    name: "Patricia Phillips",
+    role: "Statician",
+    imageUrl: "/pat.jpg",
+    twitterUrl: "#",
+    linkedinUrl: "#",
+    bio: "Quia illum aut in beatae. Possimus dolores aliquid accusantium aut in ut non assumenda. Enim iusto molestias aut deleniti eos aliquid magnam molestiae. At et non possimus ab. Magni labore molestiae nulla qui.",
+  },
+  {
+    name: "Inocencia “Ching Ching”Bermudez",
+    role: "Coach",
+    imageUrl: MOCK_JPG,
+    twitterUrl: "#",
+    linkedinUrl: "#",
+    bio: "Quia illum aut in beatae. Possimus dolores aliquid accusantium aut in ut non assumenda. Enim iusto molestias aut deleniti eos aliquid magnam molestiae. At et non possimus ab. Magni labore molestiae nulla qui.",
+  },
+  {
+    name: "Leon Martin",
+    role: "Coach",
+    imageUrl: MOCK_JPG,
+    twitterUrl: "#",
+    linkedinUrl: "#",
+    bio: "Quia illum aut in beatae. Possimus dolores aliquid accusantium aut in ut non assumenda. Enim iusto molestias aut deleniti eos aliquid magnam molestiae. At et non possimus ab. Magni labore molestiae nulla qui.",
+  },
+  {
+    name: "Kareem Henley",
+    role: "Coach",
+    imageUrl: MOCK_JPG,
     twitterUrl: "#",
     linkedinUrl: "#",
     bio: "Quia illum aut in beatae. Possimus dolores aliquid accusantium aut in ut non assumenda. Enim iusto molestias aut deleniti eos aliquid magnam molestiae. At et non possimus ab. Magni labore molestiae nulla qui.",
