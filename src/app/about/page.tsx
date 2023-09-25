@@ -141,7 +141,7 @@ export default function AboutUs() {
               </div>
             </div>
             <div className="lg:flex lg:flex-auto lg:justify-center">
-              <dl className="w-64 space-y-8 xl:w-80">
+              <dl className="w-72 space-y-8 xl:w-80">
                 {stats.map((stat) => (
                   <div
                     key={stat.label}

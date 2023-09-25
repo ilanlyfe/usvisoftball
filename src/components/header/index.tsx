@@ -6,14 +6,14 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 const navigation = [
   { name: "Roster", href: "#" },
   { name: "Events", href: "#" },
-  { name: "Shop", href: "#" },  
+  { name: "Shop", href: "#" },
   { name: "About Us", href: "/about" },
 ];
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
-    <header className="absolute inset-x-0 top-0 z-50">
+    <header className="fixed frosty-bg pb-4 inset-x-0 top-0 z-50">
       <div className="mx-auto max-w-7xl">
         <div className="px-6 pt-6 lg:max-w-2xl lg:pl-8 lg:pr-0">
           <nav
