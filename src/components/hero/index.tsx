@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -54,9 +55,11 @@ export default function Hero() {
           </div>
         </div>
         <div className="bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <img
+          <Image
             className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
             src="/hero.jpg"
+            height={208}
+            width={208}
             alt=""
           />
         </div>

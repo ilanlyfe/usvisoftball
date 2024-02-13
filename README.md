@@ -1,4 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Site map 
+
+Usvisbf 
+Nav
+- Home (baseball diamond)
+    - donate hero
+    - Articles
+    - Right rail: Ads banner 
+- Events 📆 -> juvae.co/usvisoftball
+    - circle name (verified)
+    - followers(online?)
+    - sections:[memories,events,journeys,channels|bubble(s)]
+    - settings(is_owner?)
+- Join (the team) - if interested sign up to recieve more info (form has options as how person would like to participate)
+- About
+    - blurb
+    - Staff
+    - Footer 
+- donate ❤️ 
+
 
 ## Getting Started
 
@@ -32,3 +51,22 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+ usvi softball layout
+    - home
+        hero
+        sponsors 
+        news-feed
+            article
+                comments <https://tailwindui.com/components/application-ui/lists/feeds>
+    - programs 
+    - roster
+        search
+        teams
+            players <https://tailwindui.com/components/application-ui/lists/grid-lists%20#Contact%20cards%20Preview%20Code%20React>
+
+    - events
+        hero highlighting the bahamian tournament
+        calenar view
+    - shop
