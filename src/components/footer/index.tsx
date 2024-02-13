@@ -2,11 +2,8 @@ import { FC } from "react";
 
 const footerNavigation = {
   main: [
-    { name: "Blog", href: "#" },
-    { name: "Jobs", href: "#" },
-    { name: "Press", href: "#" },
-    { name: "Accessibility", href: "#" },
-    { name: "Partners", href: "#" },
+    // { name: "Events", href: "https://juvae.co/usvisoftball/?events=true" },
+    // { name: "About", href: "/about" },
   ],
   social: [
     {
@@ -76,48 +73,45 @@ const footerNavigation = {
 interface FooterProps {}
 const Footer: FC<FooterProps> = () => {
   return (
-    <div>
-      {/* Footer */}
-      <footer className="mx-auto mt-40 max-w-7xl overflow-hidden px-6 pb-20 sm:mt-64 sm:pb-24 lg:px-8">
-        <nav
-          className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12"
-          aria-label="Footer"
-        >
-          {footerNavigation.main.map((item) => (
-            <div key={item.name} className="pb-6">
-              <a
-                href={item.href}
-                className="text-sm leading-6 text-gray-600 hover:text-gray-900"
-              >
-                {item.name}
-              </a>
-            </div>
-          ))}
-        </nav>
-        <div className="mt-10 flex justify-center space-x-10">
-          {footerNavigation.social.map((item) => (
+    <footer className="mx-auto max-w-7xl overflow-hidden px-6 pb-20 sm:mt-64 sm:pb-24 lg:px-8">
+      <nav
+        className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12"
+        aria-label="Footer"
+      >
+        {/* {footerNavigation.main.map((item) => (
+          <div key={item.name} className="pb-6">
             <a
-              key={item.name}
               href={item.href}
-              className="text-gray-400 hover:text-gray-500"
+              className="text-sm leading-6 text-gray-600 hover:text-gray-900"
             >
-              <span className="sr-only">{item.name}</span>
-              <item.icon className="h-6 w-6" aria-hidden="true" />
+              {item.name}
             </a>
-          ))}
-        </div>
-        <p className="mt-10 text-center text-xs leading-5 text-gray-500">
-          &copy; 2023 USVI Softball Federation, Inc. (503c) All rights reserved.
-        </p>
-        <p className="mt-10 text-center text-xs leading-5 text-gray-500">
-          headPowered with ❤️ by{" "}
-          <a href="https://juvae.co">
-            <b>juvae</b>
+          </div>
+        ))} */}
+      </nav>
+      <div className="mt-10 flex justify-center space-x-10">
+        {footerNavigation.social.map((item) => (
+          <a
+            key={item.name}
+            href={item.href}
+            className="text-gray-400 hover:text-gray-500"
+          >
+            <span className="sr-only">{item.name}</span>
+            <item.icon className="h-6 w-6" aria-hidden="true" />
           </a>
-          .
-        </p>
-      </footer>
-    </div>
+        ))}
+      </div>
+      <p className="mt-10 text-center text-xs leading-5 text-gray-500">
+        &copy; 2024 USVI Softball Federation, Inc. (503c) All rights reserved.
+      </p>
+      <p className="mt-10 text-center text-xs leading-5 text-gray-500">
+        Powered with ❤️ by{" "}
+        <a href="https://juvae.co">
+          <b>juvae</b>
+        </a>
+        .
+      </p>
+    </footer>
   );
 };
 
