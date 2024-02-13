@@ -1,4 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Site map 
+
+Usvisbf 
+Nav
+- Home (baseball diamond)
+    - donate hero
+    - Articles
+    - Right rail: Ads banner 
+- Events 📆 -> juvae.co/usvisoftball
+    - circle name (verified)
+    - followers(online?)
+    - sections:[memories,events,journeys,channels|bubble(s)]
+    - settings(is_owner?)
+- Join (the team) - if interested sign up to recieve more info (form has options as how person would like to participate)
+- About
+    - blurb
+    - Staff
+    - Footer 
+- donate ❤️ 
+
 
 ## Getting Started
 

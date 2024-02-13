@@ -1,5 +1,7 @@
+import Header from "@/components/old_header";
 import Hero from "./hero";
 import Image from "next/image";
+import Footer from "@/components/footer";
 const stats = [
   { label: "Transactions every 24 hours", value: "44 million" },
   { label: "Scholarships raised", value: "$119 million" },
@@ -104,6 +106,7 @@ export default function AboutUs() {
   return (
     <div className="bg-white">
       {/* Header */}
+      <Header />
       <Hero />
 
       {/* Content section */}
@@ -179,9 +182,9 @@ export default function AboutUs() {
               <Image
                 className="aspect-[4/5] w-52 flex-none rounded-2xl object-cover"
                 src={person.imageUrl}
+                alt=""
                 height={208}
                 width={208}
-                alt=""
               />
               <div className="flex-auto">
                 <h3 className="text-lg font-semibold leading-8 tracking-tight text-gray-900">
@@ -198,6 +201,7 @@ export default function AboutUs() {
           ))}
         </ul>
       </div>
+      <Footer />
     </div>
   );
 }

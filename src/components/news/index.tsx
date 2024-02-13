@@ -1,10 +1,10 @@
+import Image from "next/image";
 const posts = [
   {
     id: 1,
     title: "The USVI team is headed to the Bahamas!",
     href: "/stories/story-1",
-    description:
-      "The spirited women's softball team from the Virgin Islands is gearing up for an exciting journey across the Caribbean waters to the beautiful Bahamas. With unwavering dedication and a shared passion for the game, this remarkable group of athletes is set to represent their homeland on the international stage. Their journey isn't just about competition; it's a celebration of unity and sportsmanship, showcasing the vibrant culture of the Virgin Islands to the world. As they embark on this adventure, they carry the hopes and dreams of their community, ready to face tough opponents and create lasting memories in the Bahamas softball tournament. With their determination and team spirit, these women are not just playing for victory; they are playing for the pride and spirit of their islands.",
+    description: `The spirited women's softball team from the Virgin Islands is gearing up for an exciting journey across the Caribbean waters to the beautiful Bahamas. With unwavering dedication and a shared passion for the game, this remarkable group of athletes is set to represent their homeland on the international stage. Their journey isn't just about competition; it's a celebration of unity and sportsmanship, showcasing the vibrant culture of the Virgin Islands to the world. As they embark on this adventure, they carry the hopes and dreams of their community, ready to face tough opponents and create lasting memories in the Bahamas softball tournament. With their determination and team spirit, these women are not just playing for victory; they are playing for the pride and spirit of their islands.`,
     imageUrl:
       "https://www.usvisoftballfederation.org/wp-content/uploads/2023/02/WhatsApp-Image-2023-02-05-at-8.25.43-PM-768x960.jpeg",
     date: "Sep 16, 2023",
@@ -51,12 +51,12 @@ const posts = [
       name: "Sherry-Ann Francis",
       role: "Treasurer",
       href: "/stories/story-1",
-      imageUrl: "sherry.jpg",
+      imageUrl: "/sherry.jpg",
     },
   },
   {
     id: 1,
-    title: "Celebrating #22 Ty'elle Jepesen",
+    title: `Celebrating #22 Ty'elle Jepesen`,
     href: "/stories/story-1",
     description:
       "With a killer game on Saturday, the USVI team is on their way to the Olympics! They are going to be the first team to represent the USVI in the Olympics. We are so proud of them!",
@@ -69,8 +69,7 @@ const posts = [
       name: "Sherry-Ann Francis",
       role: "Treasurer",
       href: "/stories/story-1",
-      imageUrl:
-        "/sherry.jpg",
+      imageUrl: "/sherry.jpg",
     },
   },
   {
@@ -102,7 +101,7 @@ export default function Example() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:max-w-4xl">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            What's happening...{" "}
+            What is happening...{" "}
           </h2>
 
           <div className="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
@@ -112,9 +111,11 @@ export default function Example() {
                 className="relative isolate flex flex-col gap-8 lg:flex-row"
               >
                 <div className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0">
-                  <img
+                  <Image
                     src={post.imageUrl}
                     alt=""
+                    height="600"
+                    width="600"
                     className="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover"
                   />
                   <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
@@ -144,9 +145,11 @@ export default function Example() {
                   </div>
                   <div className="mt-6 flex border-t border-gray-900/5 pt-6">
                     <div className="relative flex items-center gap-x-4">
-                      <img
+                      <Image
                         src={post.author.imageUrl}
                         alt=""
+                        height="600"
+                        width="600"
                         className="h-10 w-10 rounded-full bg-gray-50"
                       />
                       <div className="text-sm leading-6">
