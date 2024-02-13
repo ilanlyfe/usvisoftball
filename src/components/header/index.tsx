@@ -50,7 +50,7 @@ export default function Example() {
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <div className="_hidden sm:ml-6 sm:flex sm:space-x-8 mr-4">
+                <div className="hidden sm:ml-6 sm:flex sm:space-x-8 mr-4">
                   {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
                   <a
                     href="#"
@@ -75,11 +75,11 @@ export default function Example() {
                 >
                   <span className="absolute -inset-1.5" />
                   <span className="sr-only">View notifications</span>
-                  <BellIcon className="h-6 w-6" aria-hidden="true" />
+                  <BellIcon className="hidden h-6 w-6" aria-hidden="true" />
                 </button>
 
                 {/* Profile dropdown */}
-                <Menu as="div" className="relative ml-3">
+                <Menu as="div" className=" hidden relative ml-3">
                   <div>
                     <Menu.Button className="relative flex rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
                       <span className="absolute -inset-1.5" />
@@ -145,7 +145,7 @@ export default function Example() {
                 </Menu>
                 <a
                   href="#"
-                  className="ml-6 inline-flex items-center rounded-md bg-gradient-to-r from-blue-800 to-green-400  
+                  className="ml-6 inline-flex items-center rounded-md bg-gradient-to-r from-blue-400 to-green-300  
                   px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline 
                   focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
