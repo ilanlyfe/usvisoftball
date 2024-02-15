@@ -6,8 +6,7 @@ const stats = [
   { label: "New users annually", value: "46,000" },
 ];
 
-const MOCK_JPG =
-  "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80";
+const MOCK_JPG = "/emerito.jpg";
 const people = [
   {
     name: "Elroy Hill",
@@ -20,7 +19,7 @@ const people = [
   {
     name: "Jose Rosario",
     role: "Director",
-    imageUrl: MOCK_JPG,
+    imageUrl: "/jose.jpg",
     twitterUrl: "#",
     linkedinUrl: "#",
     bio: "Quia illum aut in beatae. Possimus dolores aliquid accusantium aut in ut non assumenda. Enim iusto molestias aut deleniti eos aliquid magnam molestiae. At et non possimus ab. Magni labore molestiae nulla qui.",
@@ -104,10 +103,10 @@ export default function AboutUs() {
   return (
     <div className="bg-white">
       {/* Header */}
-      <Hero />
+      {/* <Hero /> */}
 
       {/* Content section */}
-      <div className="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8">
+      <div className="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8 __ hidden">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Our mission
