@@ -3,6 +3,13 @@ import Image from "next/image";
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import Button, { ButtonVariant } from "../core/button";
+
+const navigation = [
+  // { name: "Shop", href: "store.usvisf.org" },
+  { name: "Events", href: "/events" },
+  { name: "About Us", href: "/about" },
+];
 
 function classNames(...classes: any) {
   return classes.filter(Boolean).join(" ");
@@ -52,22 +59,20 @@ export default function Example() {
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8 mr-4">
                   {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
-                  <a
-                    href="#"
-                    className="inline-flex items-center border-b-2 
-                    px-1 pt-1 text-sm font-medium 
-                    border-blue-500 text-gray-900"
-                  >
-                    Events
-                  </a>
-                  <a
-                    href="/about"
-                    className="inline-flex items-center border-b-2 
+                  {navigation.map((n, i) => (
+                    <a
+                      key={i}
+                      href={n.href}
+                      className="inline-flex items-center border-b-2 
                     px-1 pt-1 text-sm font-medium 
                     border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"
-                  >
-                    About
-                  </a>
+                      //   className="inline-flex items-center border-b-2
+                      // px-1 pt-1 text-sm font-medium
+                      // _border-blue-500 text-gray-900"
+                    >
+                      {n.name}
+                    </a>
+                  ))}
                 </div>
                 <button
                   type="button"
@@ -143,14 +148,7 @@ export default function Example() {
                     </Menu.Items>
                   </Transition>
                 </Menu>
-                <a
-                  href="#"
-                  className="ml-6 inline-flex items-center rounded-md bg-gradient-to-r from-blue-400 to-green-300  
-                  px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline 
-                  focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                >
-                  Donate ❤️
-                </a>
+                <Button variant={ButtonVariant.DONATE} />
               </div>
             </div>
           </div>
