@@ -3,9 +3,9 @@ import mock_data from "@/mock/data.json";
 const stories = mock_data.stories;
 export default function Example() {
   return (
-    <div className="bg-white pt-24 mb-24 sm:py-32">
+    <div className="bg-white mb-24 my-8">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:max-w-4xl">
+        <div className="mx-auto _max-w-2xl _lg:max-w-4xl">
           <div className="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
             {stories.map((story) => (
               <article
